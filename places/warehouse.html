@@ -51,6 +51,54 @@
             text-align: center;
         }
 
+        .suggest-form fieldset {
+            border: 2px dashed #b85f5f;
+            border-radius: 12px;
+            padding: 15px 20px;
+            margin-bottom: 25px;
+        }
+
+        .suggest-form,
+        .suggest-form label,
+        .suggest-form legend,
+        .suggest-form h2 {
+            color: #ffffff !important;
+            
+        }
+
+        .suggest-form input[type="text"],
+        .suggest-form input[type="email"] {
+            display: block !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            text-align: center !important;
+        }
+
+        .suggest-form label {
+            display: block !important;
+            text-align: center !important;
+            width: 100% !important;
+        }
+
+        .suggest-form, 
+        form {
+            max-width: 400px !important;
+            width: 100% !important;
+            margin: 0 auto !important;
+            float: none !important;
+            display: block !important;
+        }
+
+        .suggest-form input[type="text"],
+        .suggest-form input[type="email"] {
+            display: block !important;
+            float: none !important;
+            margin: 15px auto !important;
+            width: 200px !important;   
+            text-align: center !important;
+        }
+
+
     </style>
 
     <main>
@@ -77,6 +125,59 @@
             </tbody>
         </table>
     </main>
+
+
+    <form action="#" method="POST" class="suggest-form">
+    <h2>Suggest a Place!</h2>
+
+
+    <div class="form-group">
+        <label for="place-name">Place Name:</label>
+        <input type="text" id="place-name" name="place_name" required placeholder="e.g. Big Brew">
+    </div>
+
+    <fieldset>
+        <legend>Category</legend>
+        <label>
+            <input type="radio" name="category" value="food" checked> Food & Drinks
+        </label>
+        
+        <label>
+            <input type="radio" name="category" value="study"> Study Spot
+        </label>
+        
+        <label>
+            <input type="radio" name="category" value="outdoors"> Outdoors
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>What's good about it?</legend>
+            <label>
+        <input type="checkbox" name="features" value="affordable"> Affordable
+        </label>
+        
+        <label>
+            <input type="checkbox" name="features" value="good-wifi"> Fast Wi-Fi
+        </label>
+        
+        <label>
+            <input type="checkbox" name="features" value="quiet"> Quiet Environment
+        </label>
+    </fieldset>
+
+   
+    <div class="form-group">
+        <label for="contact-email">Contact Email:</label>
+        <input type="email" id="contact-email" name="email" required placeholder="yourname@email.com">
+    </div>
+
+  
+  <button type="submit">Submit Suggestion</button>
+</form>
+
+
+
 </body>
 </html>
 <footer>

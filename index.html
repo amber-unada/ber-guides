@@ -8,6 +8,7 @@
                <li><a href="index.html" style="font-family: Bebas Neue, sans-serif; text-align: center;">Home</a></li>
                <li><a href="about.html" style="font-family: Bebas Neue, sans-serif; text-align: center;">About</a></li>
                <li><a href="contact.html" style="font-family: Bebas Neue, sans-serif; text-align: center;">Contact</a></li>
+               <link rel="stylesheet" href="style.css">
             </ul>
          </nav>
       </header>
@@ -48,38 +49,38 @@
     <img src="amber.jpg" alt="Amber's Picture" width="200" height="200">
    </div>
 
+   <h2 style="color:white; font-family: 'Oswald', sans-serif; text-align: center; ">My Most Favorites</h2>
+
    <body style ="background-color:black"></body>
 
-   <article>
-      <h2 style="color:white; font-family: 'Oswald', sans-serif; text-align: center; ">My Most Favorites</h2>
-      <h3 style="color: white; font-family: 'Fjalla One', sans-serif; text-align: center;">Warehouse Coffee</h3>
-      <p style="color: white; text-align: center;">Recto Ave, Sampaloc, Maynila.</p>
-      <p style="color: white; text-align: center;">A café that features an interior inspired by a warehouse in Brooklyn, New York. It has unique atmosphere and serves great coffee, good for relaxing or spending the day after long hours of work. I highly recommend this place.</p>
+   <main>
+      <div class="place-list">
+      
+         <div class="place-card">
+            <h3 style="color: white; font-family: 'Fjalla One', sans-serif; text-align: center;">Warehouse Coffee</h3>
+            <p style="color: white; text-align: center;">Recto Ave, Sampaloc, Maynila.</p>
+            <p style="color: white; text-align: center;">A café that features an interior inspired by a warehouse in Brooklyn, New York. It has unique atmosphere and serves great coffee, good for relaxing or spending the day after long hours of work. I highly recommend this place.</p>
+            <p class="details link">
+               <a href="places/warehouse.html" class="view-details">View details</a>
+            </p>
+            <img src="warehouse_coffee.jpg" alt="Warehouse Coffee" width="300" height="300">
+         </div>
 
-      <div>
-         <img src="warehouse_coffee.jpg" alt="Warehouse Coffee" width="300" height="300">
-      </div>
+         <div class="place-card">
+            <h3 style="color: white; font-family: 'Fjalla One', sans-serif; text-align: center;">Pahuway Coffee by R&R</h3>
+            <p style="color: white; font-family: 'Fjalla One', sans-serif; text-align: center;">Taft Ave, Ermita, Manila.</p>
+            <p style="color: white; text-align: center;">A cozy coffee shop that serves excellent and expensive coffee. It has more character and warmer ambiance, it also serves meals such as rice and desserts. I would recommend going here if you want to be  a little bit sophisticated.</p>
+            <img src="pahuway.jpg" alt="Pahuway Coffee" width="300" height="300">
+         </div>
 
-      <p class="details link">
-         <a href="places/warehouse.html" style="text-align: center;">View details</a>
-      </p>
-
-      <h3 style="color: white; font-family: 'Fjalla One', sans-serif; text-align: center;">Pahuway Coffee by R&R</h3>
-      <p style="color: white; font-family: 'Fjalla One', sans-serif; text-align: center;">Taft Ave, Ermita, Manila.</p>
-      <p style="color: white; text-align: center;">A cozy coffee shop that serves excellent and expensive coffee. It has more character and warmer ambiance, it also serves meals such as rice and desserts. I would recommend going here if you want to be  a little bit sophisticated.</p>
-
-      <div>
-         <img src="pahuway.jpg" alt="Pahuway Coffee" width="300" height="300">
-      </div>
-
-      <h3 style="color:white; font-family: 'Fjalla One', sans-serif; text-align: center;">San Pabrew</h3>
-      <p style="color: white; font-family: 'Fjalla One', sans-serif; text-align: center;">Maysilo, Mandaluyong City.</p>
-      <p style="color: white; text-align: center;">An underrated gem that offers a unique coffee experience in a relaxed setting. It's perfect for those looking for a quiet place to enjoy quality coffee and light meals. Their nutella drink is a must-try! One of the best drinks I've ever tasted.</p>
-
-      <div>
-         <img src="san_pabrew.jpg" alt="San Pabrew" width="300" height="300">
-      </div>
-   </article>
+         <div class="place-card">
+            <h3 style="color:white; font-family: 'Fjalla One', sans-serif; text-align: center;">San Pabrew</h3>
+            <p style="color: white; font-family: 'Fjalla One', sans-serif; text-align: center;">Maysilo, Mandaluyong City.</p>
+            <p style="color: white; text-align: center;">An underrated gem that offers a unique coffee experience in a relaxed setting. It's perfect for those looking for a quiet place to enjoy quality coffee and light meals. Their nutella drink is a must-try! One of the best drinks I've ever tasted.</p>
+            <img src="san_pabrew.jpg" alt="San Pabrew" width="300" height="300">
+         </div>
+      </article>
+   </main>
 </html>
 <footer>
    <p style="color: white;">&copy; 2026 ABA. All rights reserved.</p>
